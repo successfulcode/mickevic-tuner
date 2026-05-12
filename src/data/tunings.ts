@@ -150,7 +150,7 @@ export const TUNINGS: TuningPreset[] = [
     instrument: 'bass',
     name: '5-String Standard',
     strings: [
-      { note: 'B', octave: 0 }, { note: 'E', octave: 1 }, { note: 'A', octave: 1 },
+      { note: 'B', octave: 1 }, { note: 'E', octave: 1 }, { note: 'A', octave: 1 },
       { note: 'D', octave: 2 }, { note: 'G', octave: 2 },
     ],
     description: 'Adds a low B string for extended range. Common in jazz, funk, and metal.',

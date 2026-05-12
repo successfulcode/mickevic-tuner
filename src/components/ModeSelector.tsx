@@ -2,6 +2,9 @@ import { For } from 'solid-js'
 import type { Component } from 'solid-js'
 import { appStore } from '../stores/appStore'
 import type { AppMode } from '../stores/appStore'
+import { TUNINGS } from '../data/tunings'
+
+const guitarDefault = TUNINGS.find(t => t.id === 'guitar-standard') ?? null
 
 const MODES: { id: AppMode; label: string; symbol: string }[] = [
   { id: 'guitar',     label: 'Guitar',     symbol: '𝄞' },
@@ -20,8 +23,16 @@ const ModeSelector: Component = () => (
             appStore.setMode(m.id)
             appStore.setDetectedNote(null)
             appStore.setTargetHz(null)
-            // Reset instrument picker when leaving instrument mode
-            if (m.id !== 'instrument') appStore.setSelectedInstrument(null)
+            appStore.setActiveStringIndex(0)
+            if (m.id === 'guitar') {
+              appStore.setSelectedTuning(guitarDefault)
+              appStore.setSelectedInstrument(null)
+            } else if (m.id === 'instrument') {
+              appStore.setSelectedTuning(null)
+            } else {
+              appStore.setSelectedTuning(null)
+              appStore.setSelectedInstrument(null)
+            }
           }}
         >
           <span class="mode-icon">{m.symbol}</span>

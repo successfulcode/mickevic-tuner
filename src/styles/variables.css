@@ -1,0 +1,37 @@
+:root {
+  /* Backgrounds */
+  --bg:         #090910;
+  --surface:    #111118;
+  --surface-2:  #18181f;
+  --border:     #222233;
+
+  /* Pitch state */
+  --in-tune:    #00ff88;
+  --close:      #ffaa00;
+  --off:        #ff4455;
+
+  /* Text */
+  --text:       #e2e2f0;
+  --text-dim:   #8888aa;
+  --text-muted: #333355;
+
+  /* Accent */
+  --accent:     #6666ff;
+  --accent-dim: rgba(102, 102, 255, 0.15);
+
+  /* Geometry */
+  --radius-sm:  6px;
+  --radius-md:  12px;
+  --radius-lg:  20px;
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+
+  /* Typography */
+  --font-ui:   system-ui, -apple-system, sans-serif;
+  --font-mono: 'Space Mono', 'SF Mono', 'Menlo', 'Consolas', monospace;
+}

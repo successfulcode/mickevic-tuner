@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="25%" r="75%">
+      <stop offset="0%" stop-color="#151528"/>
+      <stop offset="100%" stop-color="#090910"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+  <!-- Arc -->
+  <path d="M 13 33 A 19 19 0 0 1 51 33"
+        fill="none" stroke="#1e1e2e" stroke-width="2" stroke-linecap="round"/>
+  <!-- Needle glow -->
+  <line x1="32" y1="40" x2="32" y2="22"
+        stroke="rgba(0,255,136,0.2)" stroke-width="4" stroke-linecap="round"/>
+  <!-- Needle -->
+  <line x1="32" y1="40" x2="32" y2="22"
+        stroke="#00ff88" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Tip -->
+  <circle cx="32" cy="22" r="2.5" fill="#00ff88"/>
+  <!-- Pivot -->
+  <circle cx="32" cy="40" r="3" fill="#141420"/>
+  <circle cx="32" cy="40" r="1.5" fill="#444466"/>
+</svg>

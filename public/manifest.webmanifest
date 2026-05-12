@@ -1,0 +1,41 @@
+{
+  "name": "Mickevic Tuner",
+  "short_name": "Tuner",
+  "description": "Professional browser-based instrument tuner — guitar, vocal, bass, ukulele and more.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#090910",
+  "theme_color": "#090910",
+  "categories": ["music", "utilities"],
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Guitar Tuner",
+      "short_name": "Guitar",
+      "url": "/?mode=guitar",
+      "icons": [{ "src": "/icons/icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+    },
+    {
+      "name": "Vocal Tuner",
+      "short_name": "Vocal",
+      "url": "/?mode=vocal",
+      "icons": [{ "src": "/icons/icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+    }
+  ]
+}

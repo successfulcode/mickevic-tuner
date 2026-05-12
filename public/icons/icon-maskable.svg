@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="25%" r="75%">
+      <stop offset="0%" stop-color="#151528"/>
+      <stop offset="100%" stop-color="#090910"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Full bleed background (maskable icons must fill the entire viewport) -->
+  <rect width="512" height="512" fill="url(#bg)"/>
+
+  <!-- Content scaled to 75% to sit inside the safe zone -->
+  <g transform="translate(64, 64) scale(0.75)">
+    <!-- Arc track -->
+    <path d="M 107 265 A 148 148 0 0 1 405 265"
+          fill="none" stroke="#1a1a2a" stroke-width="10" stroke-linecap="round"/>
+
+    <!-- In-tune zone -->
+    <path d="M 238 170 A 148 148 0 0 1 274 170"
+          fill="none" stroke="rgba(0,255,136,0.3)" stroke-width="10" stroke-linecap="round"/>
+
+    <!-- Center tick -->
+    <line x1="256" y1="182" x2="256" y2="156"
+          stroke="rgba(255,255,255,0.28)" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Needle glow -->
+    <line x1="256" y1="316" x2="256" y2="176"
+          stroke="rgba(0,255,136,0.15)" stroke-width="24" stroke-linecap="round"/>
+
+    <!-- Needle -->
+    <line x1="256" y1="316" x2="256" y2="176"
+          stroke="#00ff88" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Tip -->
+    <circle cx="256" cy="176" r="16" fill="rgba(0,255,136,0.2)"/>
+    <circle cx="256" cy="176" r="8" fill="#00ff88" filter="url(#glow)"/>
+
+    <!-- Pivot -->
+    <circle cx="256" cy="316" r="14" fill="#141420"/>
+    <circle cx="256" cy="316" r="6" fill="#444466"/>
+  </g>
+</svg>
